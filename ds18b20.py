@@ -27,7 +27,7 @@ while True:
         idx = sensorsID.index(ID)+1
         info = "{:.1f}'C ".format(ds_sensor.read_temp(ID))
         # display info
-        lcd.fill_rect(30,10+idx*10,lcd.WIDTH-1,15+idx*16,0)
+        lcd.fill_rect(30,10+idx*10,lcd.WIDTH-1,19+idx*10,0)
         lcd.text(info,30,10+idx*10,1,True)
     
     utime.sleep(1)
